@@ -1,0 +1,82 @@
+.exercise {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: auto;
+  max-width: 1200px;
+  padding: 4rem 1rem;
+
+  header {
+    width: 100%;
+
+    form {
+      display: flex;
+      justify-content: space-between;
+
+      h2 {
+        color: #00a9e0;
+        font-weight: normal;
+        text-align: left;
+        text-transform: uppercase;
+      }
+
+      .rightSide {
+        align-items: center;
+        display: flex;
+        text-align: right;
+
+        .filters {
+          display: flex;
+          justify-content: space-between;
+          padding-right: 2rem;
+
+          img {
+            padding-right: 2rem;
+
+            &:active,
+            &.active {
+              filter: invert(54%) sepia(52%) saturate(4964%) hue-rotate(163deg)
+                brightness(100%) contrast(101%);
+            }
+          }
+        }
+
+        input[type="text"] {
+          border: 1px solid #5b6770;
+          border-radius: 20px;
+          color: #555;
+          font-size: 1rem;
+          padding: 10px;
+          width: 80%;
+
+          @media screen and (min-width: 767px) {
+            width: 85%;
+          }
+        }
+
+        button {
+          background: transparent;
+          border: none;
+          cursor: pointer;
+          display: block;
+          float: right;
+          margin: 2px 0 0 -43px;
+          position: relative;
+          z-index: 2;
+
+          img {
+            height: 34px;
+            width: 34px;
+          }
+        }
+
+        .clearFilters {
+          color: #0d91b9;
+          font-weight: bold;
+          text-align: right;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}

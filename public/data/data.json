@@ -1,0 +1,158 @@
+{
+  "media": [
+    {
+      "title": "Hotline",
+      "image": "/data/images/hotline.jpg",
+      "new": true,
+      "highLimit": true,
+      "top": false
+    },
+    {
+      "title": "Neon Jungle",
+      "image": "/data/images/neon-jungle.jpg",
+      "new": true,
+      "highLimit": true,
+      "top": false
+    },
+    {
+      "title": "3 Hit Pay",
+      "image": "/data/images/3hit-pay.jpg",
+      "new": false,
+      "highLimit": false,
+      "top": true
+    },
+    {
+      "title": "Day of the Dead",
+      "image": "/data/images/day-of-dead.jpg",
+      "new": false,
+      "highLimit": false,
+      "top": false
+    },
+    {
+      "title": "Dr. Jekyll & Mr. Hyde",
+      "image": "/data/images/dr-jekyl-hyde.jpg",
+      "new": false,
+      "highLimit": false,
+      "top": false
+    },
+    {
+      "title": "Day of the Dead",
+      "image": "/data/images/day-of-dead.jpg",
+      "new": false,
+      "highLimit": false,
+      "top": false
+    },
+    {
+      "title": "Sea of Tranquility",
+      "image": "/data/images/sea-of-tranquility.jpg",
+      "new": true,
+      "highLimit": false,
+      "top": false
+    },
+    {
+      "title": "Aloha! Cluster Pays",
+      "image": "/data/images/aloha.jpg",
+      "new": true,
+      "highLimit": false,
+      "top": false
+    },
+    {
+      "title": "Dr. Jekyll & Mr. Hyde",
+      "image": "/data/images/dr-jekyl-hyde.jpg",
+      "new": false,
+      "highLimit": false,
+      "top": false
+    },
+    {
+      "title": "Day of the Dead",
+      "image": "/data/images/day-of-dead.jpg",
+      "new": false,
+      "highLimit": false,
+      "top": false
+    },
+    {
+      "title": "Dr. Jekyll & Mr. Hyde",
+      "image": "/data/images/dr-jekyl-hyde.jpg",
+      "new": false,
+      "highLimit": false,
+      "top": false
+    },
+    {
+      "title": "Fruit Spin",
+      "image": "/data/images/fruit-spin.jpg",
+      "new": false,
+      "highLimit": false,
+      "top": false
+    },
+    {
+      "title": "Jack Hammer",
+      "image": "/data/images/jack-hammer.jpg",
+      "new": false,
+      "highLimit": false,
+      "top": false
+    },
+    {
+      "title": "Spinata Grande",
+      "image": "/data/images/spinata.jpg",
+      "new": false,
+      "highLimit": false,
+      "top": false
+    },
+    {
+      "title": "Sugar Smash",
+      "image": "/data/images/sugar-smash.jpg",
+      "new": false,
+      "highLimit": false,
+      "top": false
+    },
+    {
+      "title": "Jumanji Video Slot",
+      "image": "/data/images/jumanji.jpg",
+      "new": true,
+      "highLimit": false,
+      "top": true
+    },
+    {
+      "title": "Fa-Fa Twins",
+      "image": "/data/images/fafa-twins.jpg",
+      "new": false,
+      "highLimit": false,
+      "top": false
+    },
+    {
+      "title": "Smokin Hot Gems",
+      "image": "/data/images/smokin-hot-gems.jpg",
+      "new": false,
+      "highLimit": false,
+      "top": false
+    },
+    {
+      "title": "Gonzo's Quest",
+      "image": "/data/images/gonzos-quest.jpg",
+      "new": false,
+      "highLimit": false,
+      "top": false
+    },
+    {
+      "title": "Hotline",
+      "image": "/data/images/hotline.jpg",
+      "new": false,
+      "highLimit": false,
+      "top": false
+    },
+    {
+      "title": "Fruit Spin",
+      "image": "/data/images/fruit-spin.jpg",
+      "new": false,
+      "highLimit": false,
+      "top": false
+    },
+    {
+      "title": "Spinata Grande",
+      "image": "/data/images/spinata.jpg",
+      "new": false,
+      "highLimit": false,
+      "top": false
+    }
+  ]
+}
