@@ -15,23 +15,36 @@
 
       h2 {
         color: #00a9e0;
+        display: none;
         font-weight: normal;
         text-align: left;
         text-transform: uppercase;
+
+        @media screen and (min-width: 430px) {
+          display: block;
+        }
       }
 
       .rightSide {
         align-items: center;
         display: flex;
+        padding-bottom: 0.5rem;
         text-align: right;
 
         .filters {
           display: flex;
           justify-content: space-between;
-          padding-right: 2rem;
+
+          @media screen and (min-width: 950px) {
+            padding-right: 2rem;
+          }
 
           img {
-            padding-right: 2rem;
+            padding-right: 0.5rem;
+
+            @media screen and (min-width: 950px) {
+              padding-right: 2rem;
+            }
 
             &:active,
             &.active {

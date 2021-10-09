@@ -56,7 +56,7 @@ const Exercise2 = () => {
 
     // Set the filtered items to the updated items
     setFilteredItems(updatedItems);
-  }, [searchTitle, newFilter, topFilter]);
+  }, [searchTitle, newFilter, topFilter, originalItems]);
 
   // Set the search title state value and kick off the main filter function
   const searchTitleChangeHandler = (event) => {
