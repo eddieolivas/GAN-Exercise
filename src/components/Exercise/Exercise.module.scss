@@ -73,9 +73,13 @@
           cursor: pointer;
           display: block;
           float: right;
-          margin: 2px 0 0 -43px;
+          margin: 6px 0 0 -49px;
           position: relative;
           z-index: 2;
+
+          @media screen and (min-width: 767px) {
+            margin: 2px 0 0 -43px;
+          }
 
           img {
             height: 34px;
