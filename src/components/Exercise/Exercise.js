@@ -31,34 +31,41 @@ const Exercise2 = () => {
 
   // The main filter function which runs when any of the filters change
   useEffect(() => {
-    // Set up the filters object with the state values
-    const filters = {
-      title: searchTitle,
-      new: newFilter,
-      top: topFilter,
-    };
+    // Using setTimeout to prevent the component from rerendering on every keystroke
+    const timer = setTimeout(() => {
+      // Set up the filters object with the state values
+      const filters = {
+        title: searchTitle,
+        new: newFilter,
+        top: topFilter,
+      };
 
-    // The main filter function. Filter items in the original list by looping through the keys in the filter object
-    // and comparing the key's value to the values in the media item
-    var filterKeys = Object.keys(filters);
-    const updatedItems = originalItems.filter((item) => {
-      return filterKeys.every((key) => {
-        // If the filter has no value or is not set to true, return true and "skip" it
-        if (!filters[key].length && filters[key] !== true) {
-          return true;
-        } else if (key === "title") {
-          return item[key].toLowerCase().includes(filters[key].toLowerCase());
-        } else {
-          return item[key] === filters[key];
-        }
+      // The main filter function. Filter items in the original list by looping through the keys in the filter object
+      // and comparing the key's value to the values in the media item
+      var filterKeys = Object.keys(filters);
+      const updatedItems = originalItems.filter((item) => {
+        return filterKeys.every((key) => {
+          // If there's nothing in the search box, don't filter based on that
+          if (!filters[key].length && filters[key] !== true) {
+            return true;
+          } else if (key === "title") {
+            // Filter based on that search box
+            return item[key].toLowerCase().includes(filters[key].toLowerCase());
+          } else {
+            // Filter based on the New or Top
+            return item[key] === filters[key];
+          }
+        });
       });
-    });
 
-    // Set the filtered items to the updated items
-    setFilteredItems(updatedItems);
+      // Set the filtered items to the updated items
+      setFilteredItems(updatedItems);
+    }, 150);
+
+    return () => clearTimeout(timer);
   }, [searchTitle, newFilter, topFilter, originalItems]);
 
-  // Set the search title state value and kick off the main filter function
+  // Set the search title, new, or top state values and kick off the main filter function
   const searchTitleChangeHandler = (event) => {
     setSearchTitle(event.target.value);
   };
